@@ -1,0 +1,232 @@
+/* css初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 主界面样式 */
+
+.main {
+    width: 100%;
+    height: 1000px;
+    /* background-color: pink; */
+}
+
+
+/* 上栏样式 */
+
+.nav {
+    background-color: rgb(32, 53, 91);
+    height: 60px;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    height: 60px;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* 上栏-左侧logo样式 */
+
+.logo {
+    float: left;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    /* background-color: rgb(171, 126, 126); */
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 上栏-中间样式 */
+
+.nav_bar {
+    float: left;
+    width: 1050px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* background-color: palegoldenrod; */
+}
+
+.nav_bar>ul>li {
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav_bar>ul>li>a:hover {
+    color: aquamarine;
+}
+
+
+/* 上栏-中右侧介绍 */
+
+.introduce {
+    float: left;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+    /* background-color: rgb(109, 176, 243); */
+}
+
+.introduce>ul>li {
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.introduce>ul>li>a:hover {
+    color: aquamarine;
+}
+
+
+/* 上栏-右侧登录样式 */
+
+.login {
+    float: left;
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(228, 227, 227);
+}
+
+.login>ul>li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.login:hover {
+    /* filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6; */
+    background-color: #fff;
+}
+
+.login>ul>li>a {
+    color: black;
+}
+
+
+/* ------中间轮播图------ */
+
+.play {
+    width: 100%;
+    height: 448px;
+    margin-top: 0;
+    /* background-color: rgb(121, 10, 10); */
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.middle {
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+    line-height: 448px;
+    /* top: 50%;
+    left: 50%;
+    /* line-height: 448px; */
+    /* 定位图片距离左边和上边的距离 */
+    /* transform: translate(-50%, -63%);  */
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translateX(50%);
+    display: flex;
+}
+
+.bar {
+    width: 55px;
+    height: 6px;
+    border: 1px solid #fff;
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.big_box {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.img_box {
+    width: 20%;
+    height: 100%;
+}
+
+.img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+
+/* ------下面文字介绍------ */
+
+.intro {
+    width: 100%;
+    height: 220px;
+    background-color: rgb(194, 193, 193);
+    display: flex;
+    margin-top: 445px;
+    flex-direction: column 0;
+}

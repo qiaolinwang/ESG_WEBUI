@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 版心宽度1200px */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(233, 238, 243);
+}
+
+.w {
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: rgb(233, 238, 243);
+    /* margin: 0 auto; */
+
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: rgb(233, 238, 243);
+    background-image: url(../images/search_bgi1.png);
+    /* background-repeat: no-repeat; */
+    background-position: top;
+    /* background-attachment: fixed; */
+
+}
+
+.search {
+    width: 1200px;
+    height: 300px;
+    /* background: rgb(52, 73, 94, 0.3); */
+}
+
+.input {
+    float: left;
+    width: 500px;
+    height: 60px;
+    outline: none;
+    /* padding: 10px; */
+    font-size: 18px;
+    text-indent: 2em;
+
+    color: #fff;
+    background-color: rgb(45, 45, 63);
+    border: 1px solid #312E3D;
+    border-radius: 18px;
+    margin: 120px 0 120px 300px;
+
+}
+
+.input:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.btn {
+    float: left;
+    width: 90px;
+    height: 60px;
+    background-color: rgb(45, 45, 63);
+    border: 1px solid #3762bc;
+    color: #fff;
+    padding: 9px 14px;
+    font-size: 18px;
+    border-radius: 18px;
+    margin: 120px 0 120px 20px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.intro_sys {
+    width: 1200px;
+    height: 1800px;
+    background-color: rgb(233, 238, 243);
+}
+
+#intro1 {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#intro2 {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.intro3 {
+    width: 1200px;
+    height: 100px;
+    padding-top: 30px;
+
+}
+
+.intro3 h3 {
+    text-align: left;
+    font-weight: 400;
+    text-indent: 2em;
+    line-height: 40px;
+}
+
+
+.intro3 .rate_method {
+    margin-top: 40px;
+    width: 1200px;
+    height: 530px;
+}
+
+.intro3 .rate_method img {
+    width: 100%;
+}
+
+.middle {
+    margin-top: 40px;
+    width: 1200px;
+    height: 800px;
+    /* background-color: pink; */
+}
+
+.middle h1 {
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.middle img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* footer 模块 */
+.footer {
+    height: 400px;
+    background-color: rgb(45, 45, 45);
+}
+
+
+.footer .w {
+    padding-top: 35px;
+}
+
+.copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 20px;
+    color: rgb(188, 190, 194);
+    margin: 10px 0 5px 0;
+}
+
+
+
+.links {
+    float: right;
+    margin-top: 90px;
+}
+
+.links dl {
+    float: left;
+    margin-left: 80px;
+}
+
+.links dl dt {
+    font-size: 28px;
+    color: rgb(188, 190, 194);
+    margin-bottom: 5px;
+}
+
+.links dl dd {
+    color: rgb(188, 190, 194);
+    font-size: 20px;
+}
+
+
+/* 导航部分 */
+.main {
+    width: 100%;
+    height: 1000px;
+    /* background-color: pink; */
+}
+
+
+/* 上栏样式 */
+
+.nav {
+    background-color: rgb(32, 53, 91);
+    height: 60px;
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    height: 60px;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* 上栏-左侧logo样式 */
+
+.logo {
+    float: left;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    /* background-color: rgb(171, 126, 126); */
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 上栏-中间样式 */
+
+.nav_bar {
+    float: left;
+    width: 1050px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* background-color: palegoldenrod; */
+}
+
+.nav_bar>ul>li {
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav_bar>ul>li>a:hover {
+    color: aquamarine;
+}
+
+
+/* 上栏-中右侧介绍 */
+
+.introduce {
+    float: left;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+    /* background-color: rgb(109, 176, 243); */
+}
+
+.introduce>ul>li {
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.introduce>ul>li>a:hover {
+    color: aquamarine;
+}
+
+
+/* 上栏-右侧登录样式 */
+
+.login {
+    float: left;
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(228, 227, 227);
+}
+
+.login>ul>li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.login:hover {
+    /* filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6; */
+    background-color: #fff;
+}
+
+.login>ul>li>a {
+    color: black;
+}

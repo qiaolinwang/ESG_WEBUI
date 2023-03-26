@@ -1,6 +1,3 @@
-<!-- 本代码由小风博客分享：blog.evv1.com -->
-<!-- 有问题在博客询问 不添加联系方式 -->
-
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
  
@@ -89,8 +86,8 @@
                         <view style="border-radius: 35rpx;">
                             <text style="word-break: break-all;">{{x.msg}}&nbsp;&nbsp;</text>
                         </view>
-                        <image src="您的头像地址哦" style="width: 40px; height: 40px; border-radius: 20px;"></image>
-                        <!-- <image src="https://img2.woyaogexing.com/2017/07/07/67ca73a32fe97f63!400x400_big.jpg" style="width: 40px; height: 40px; border-radius: 80rpx;"></image> -->
+                        <image src="../images/img1.jpeg" style="width: 40px; height: 40px; border-radius: 20px;"></image>
+                        <!-- <image src="../images/img1.jpeg" style="width: 40px; height: 40px; border-radius: 80rpx;"></image> -->
                     </view>
  
                 </view>
@@ -100,7 +97,7 @@
                 align-items: flex-start;">
  
                     <view style="width: 500rpx;display: flex; align-items: center;">
-                        <image src="机器人的头像地址哦" style="width: 40px; height: 40px; border-radius: 20px;"></image>
+                        <image src="../images/gpt01.png" style="width: 40px; height: 40px; border-radius: 20px;"></image>
                         <view style="border-radius: 35rpx;background-color: #f9f9f9;">
                             <text style="word-break: break-all;">&nbsp;&nbsp;{{x.msg}}</text>
                             <!-- &nbsp;加两个空格，美观一些 -->
@@ -148,7 +145,7 @@
     </view>
  
     <!-- 点击按钮显示/隐藏导航栏 -->
-    <button  v-on:click="toggleNav" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background-color: #999; border: none; border-radius: 50%; color: #fff; font-size: 24px; text-align: center; line-height: 50px;"> {{ navVisible ? '显':'隐'}}</button>
+    <!-- <button  v-on:click="toggleNav" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background-color: #999; border: none; border-radius: 50%; color: #fff; font-size: 24px; text-align: center; line-height: 50px;"> {{ navVisible ? '显':'隐'}}</button> -->
  
 </div>
  
@@ -202,7 +199,7 @@
         data() {
             return {
                 navVisible: true,
-                api: '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',
+                api: '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',
                 msgLoad: false,
                 anData: {},
                 sentext: '发送',

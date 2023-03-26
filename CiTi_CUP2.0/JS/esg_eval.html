@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG评级</title>
+    <link rel="stylesheet" href="../CSS/esg_eval.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script>
+
+    <script type="text/x-mathjax-config;executed=true">
+        window.MathJax.Hub.Config({
+            showProcessingMessages: false, //关闭js加载过程信息
+            messageStyle: "none", //不显示信息
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [["$", "$"], ["\\(", "\\)"]], //行内公式选择符
+                displayMath: [["$$", "$$"], ["\\[", "\\]"]], //段内公式选择符
+                skipTags: ["script", "noscript", "style", "textarea", "pre", "code", "a"] //避开某些标签
+            },
+            "HTML-CSS": {
+                availableFonts: ["STIX", "TeX"], //可选字体
+                showMathMenu: false //关闭右击菜单显示
+            }
+        });
+        window.MathJax.Hub.Queue(["Typeset", MathJax.Hub,document.getElementsByClassName("ck-content")]);
+</script>
+</head>
+
+<body>
+    <noscript></noscript>
+
+    <div id="app">
+        <!-- 总体页面 -->
+        <div class="home">
+            <!-- 不包含最下面声明 -->
+            <section class="main">
+                <!-- 题头 -->
+                <header class="nav">
+                    <div class="bar">
+                        <ul role="menubar" class="nav_bar">
+                            <!-- ::before -->
+                            <!-- 左侧logo -->
+                            <li role="menuitem" tabindex="0" class="el_li">
+                                <a href="main_inter.html">
+                                    <img src="../images/favicon-32x32.png" alt="">
+                                </a>
+                            </li>
+                            <!--  -->
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="esg_index.html">ESG指数</a></li>
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="esg_eval.html">ESG评级</a></li>
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="esg_invest.html">ESG投资</a></li>
+
+                            <!-- 登录按钮 -->
+                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;">
+                                <button type="button" class="el_button">
+                                    <a href="../JS/login.html">
+                                        <i class="el_user">
+                                            ::before
+                                        </i>
+                                        登录</a>
+                                </button>
+                            </li>
+
+                             <li role="menuitem" tabindex="0" class="el_li" style="float: right;"><a href="about.html">关于</a></li>
+                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;"><a href="doc.html">文档</a></li>
+                        </ul>
+                    </div>
+                </header>
+
+                
+                <!-- 展示图片 -->
+                <img src="../images/01.jpg" style="width:100%;height:100%;">
+
+                <!-- 第三部分 -->
+                <div class="intro_sys">
+                    
+                    <h1 id="intro1">企业ESG评级</h1>
+
+                    <br>
+                    <form class="search" action="/" style="margin:auto;max-width:800px;max-height:50px;">
+                      <input type="text" placeholder="输入代码/名称，搜索企业ESG评分..." name="search2">
+                      <button type="submit"><img src="../images/search.png" style="width:70px;height:70px;"></button>
+                    </form>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="intro3">
+                        <h2 style="text-align: center;"><strong>评分模型简介</strong></h2>
+                        <br>
+                        <p>本团队构建了一个包含ESG评分的估值模型，用户可以输入企业名称或代码，得到基于本团队设计的评分体系计算的ESG评分估值，
+                            从而在企业投融资过程中给出价值参考。</p>
+                        <br>
+                        <p>
+                            模型基于Fama-French的三因子模型，我们加入了ESG因子。ESG因子的构造参照账市比因子的构造方式。回归模型如下：
+                        </p>
+                        $$
+                        R_{it}-r_t=a_{it}+b_{1t}RiskPremium_t+b_{2t}SMB_t+b_{3t}HML_t+b_{4t}ESG_t+\epsilon_{it}
+                        $$
+
+                        <p>其中，从左到右的变量分别为，个股月收益率，无风险利率，a是待估截距项，b是因子的待估系数，四个因子分别为市场溢价因子，规模因子，账市比因子，ESG因子。</p>
+                    </div> 
+
+                    <br>
+                    <br>
+                    <br>
+                    
+                </div>
+
+        </div>
+
+        </section>
+    </div>
+    </div>
+    <script type="test/javascript" src="jquery_min.js"></script>
+    <script type="test/javascript" src="../JS/photo.js">
+    </script>
+</body>
+
+</html>

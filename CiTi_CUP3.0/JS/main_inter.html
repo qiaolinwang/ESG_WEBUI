@@ -1,1 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main_interface</title>
+    <link rel="stylesheet" href="../CSS/main_inter2.0.css">
+</head>
+
+<body>
+    <noscript></noscript>
+
+    <div id="app">
+        <!-- 总体页面 -->
+        <div class="home">
+            <!-- 不包含最下面声明 -->
+            <section class="main">
+
+                <!-- 题头 -->
+                <header class="nav">
+                    <div class="bar">
+                        <ul role="menubar" class="nav_bar">
+                            <!-- ::before -->
+                            <!-- 左侧logo -->
+                            <li role="menuitem" tabindex="0" class="el_li">
+                                <a href="#">
+                                    <img src="../images/favicon-32x32.png" alt="">
+                                </a>
+                            </li>
+                            <!--  -->
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="#">ESG指数</a></li>
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="#">ESG评级</a></li>
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="#">ESG投资</a></li>
+
+
+                            <!-- 登录按钮 -->
+                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;">
+                                <button type="button" class="el_button">
+                                    <a href="../JS/login.html" style="font-size: 15px;margin-top: 5px;">
+                                        
+                                            <img src="../images/login01.png" alt="" style="width: 21px;height: 21px;">
+                                       
+                                        <span>登录</span>
+                                    </a>
+                                </button>
+                            </li>
+
+                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;">
+                                <div class="mask_box">
+                                    <div class="dialog_box">
+                                        <a href="#" onclick="open_win()">
+                                            <img src="../images/gpt02.png" alt="" style="width: 32px;height: 32px;">
+                                            <span style="color: rgba(214, 214, 211, 0.87);">智能小助手</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;"><a href="#">关于</a></li>
+                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;"><a href="#">文档</a></li>
+                        </ul>
+                    </div>
+                </header>
+
+                <main class="el_main">
+                    <div class="play">
+                        <div class="play_main">
+                            <!-- 图片上的左右箭头 -->
+                            <!-- <button type="button" class="b_left">
+                                &lt;
+                            </button>
+                            <button type="button" class="b_right">
+                                &gt;
+                            </button> -->
+                            <!-- 图片盒子 -->
+                            <!-- 第一个轮播图 -->
+                            <div class="photo_one">
+                                <!-- 图片上的文字 -->
+                                <div class="photo_box">
+                                    <h1>ESG</h1>
+                                    <h2>
+                                        "基于xxx的"
+                                        <br> "ESG评估平台"
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <!-- 第二个轮播图 -->
+                            <div class="photo_two">
+                                <!-- 图片上的文字 -->
+                                <div class="photo_box">
+                                    <div style="margin: 3%;">
+                                        <h1>
+                                            "基于xxx的"
+                                            <br> "xxx的"
+                                            <br> "ESG评价指标"
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 第三个轮播图 -->
+                            <div class="photo_three">
+                                <!-- 图片上的文字 -->
+                                <div class="photo_box">
+                                    <div style="margin: 3%;">
+                                        <h1>
+                                            "客观全面的"
+                                            <br> "ESG评价系统"
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 第四个轮播图 -->
+                            <div class="photo_four">
+                                <!-- 图片上的文字 -->
+                                <div class="photo_box">
+                                    <div style="margin: 3%;">
+                                        <h1>
+                                            "个性化的"
+                                            <br> "ESG投资组合"
+                                            <br> "推荐和管理"
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+
+                <!-- 第三部分 -->
+                <div class="intro_sys">
+
+                    <h1 id="intro1">评级体系介绍：测算企业碳排放并评级的综合性金融服务平台</h1>
+
+                    <h2 id="intro2">本项目为2022-2023年第...届 “花旗杯”金融创新应用大赛参赛作品</h2>
+
+                    <div class="intro3">
+
+                        <h3>
+                            由于碳核算方法单一且数据质量难以保障，当前我国碳核算体系难以满足金融机构碳核算需求。我们团队旨在建立一个测算企业碳排放并评级的综合性金融服务平台，从而使得花旗银行可以根据企业碳名片，有针对性地设置不同的的贷款额度，实现更高效的资金配置与更科学的碳排放管理。本项目以践行普惠金融为首要目标，以推动低碳事业发展为核心理念，立足共建，力争共赢。                 </h3>
+                    </div>
+
+
+
+                    <div class="intro4">
+
+                        <ul class="clearfix">
+
+                            <li id="edge1">
+
+                                <img src="../images/earth.png" alt="">
+
+                                <h3>文本信息挖掘</h3>
+                            </li>
+
+                            <li id="edge2">
+
+                                <img src="../images/environment01.png" alt="">
+
+                                <h3>ESG评分</h3>
+                            </li>
+
+                            <li id="edge">
+
+                                <img src="../images/login01.png" alt="">
+
+                                <h3>定制化服务</h3>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- 第四大部分 包括三小块 -->
+                <!-- 一 -->
+                <div style="margin-bottom: 30px;margin-top: 30px; background-color: #e9eef3;" class="esg">
+                    <br>
+                    <!-- <h1>多源文本</h1> -->
+                    <div class="all" style="width: 100%;margin: 0px auto;">
+                        <!-- 第一个 -->
+                        <div class="all_one">
+                            <div class="intro_one" style="background: #e9eef3;">
+                                <!-- 小标头 -->
+                                <div class="title">
+                                    <div class="title_one">
+                                        <!-- 左侧 -->
+                                        <div class="one_left">
+                                            <h2>ESG权威评级汇总</h2>
+                                        </div>
+                                        <!-- 右侧 更多》 -->
+                                        <div class="one_right">
+                                            <div class="right_view">
+                                                <a href="../JS/ESG_Rating_web_2.html" class="right_a" aria-label="更多...">
+                                                    <span class="right_span">
+                                                        更多
+                                                    </span>
+                                                    <img class="right_img" src="../images/right.png" style="width: 20px;height: 20px;">
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <section class="cards">
+                                    <!-- 1 -->
+                                    <div class="card card-01">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="first">
+                                            <h3>MSCI</h3>
+                                            <div class="line"></div>
+                                            <p class="description">这是一个非常全面的，综合性很强的rating，等级制，同业之间比较</p>
+                                            <div class="button">
+                                                <a href="https://www.msci.com/our-solutions/esg-investing/esg-ratings&Climate%20search%20Tool" target="_blank">
+                                                    more 
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="card card-02">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="two">
+                                            <h3>路孚特</h3>
+                                            <div class="line"></div>
+                                            <p class="description">百分制，在同行业内排名</p>
+                                            <div class="button">
+                                                <a href="https://www.refinitiv.cn/zh/sustainable-finance/esg-scores?jump_from=1_05_37_01" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="card card-03">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="three">
+                                            <h3>S&P Global</h3>
+                                            <div class="line"></div>
+                                            <p class="description">同行业内对比</p>
+                                            <div class="button">
+                                                <a href="https://www.spglobal.com/esg/scores/results?cid=4004205&jump_from=1_05_37_01" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="card card-04">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="four">
+                                            <h3>Moringstar |
+                                                <br>Sustainalytics
+                                            </h3>
+                                            <div class="line"> </div>
+                                            <p class="description">晨星可持续发展公司的ESG风险评级覆盖超过16,000家公司，是市场上最广泛的基于分析师的ESG风险评级。新扩大的投资范围包括上市和非上市公司、固定收益发行人和中国上市公司等</p>
+                                            <div class="button">
+                                                <a href="https://www.sustainalytics.com/esg-rating/apple-inc/1007903183?jump_from=1_05_37_01" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 二 -->
+                <div style="margin-bottom: 30px; background-color: #e9eef3;" class="esg">
+                    <br>
+                    <!-- <h1>多源文本</h1> -->
+                    <div class="all" style="width: 100%;margin: 0px auto;">
+                        <!-- 第一个 -->
+                        <div class="all_one">
+                            <div class="intro_one" style="background: #e9eef3;">
+                                <!-- 小标头 -->
+                                <div class="title">
+                                    <div class="title_one">
+                                        <!-- 左侧 -->
+                                        <div class="one_left">
+                                            <h2>ESG时事新闻</h2>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <section class="cards">
+                                    <!-- 1 -->
+                                    <div class="card card-1">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="first">
+                                            <h4>Governance in Brief – March 16, 2023</h4>
+                                            <div class="line"></div>
+                                            <p class="description">Canadian regulators have issued new guidance for the country's banks and insurance companies to better manage climate-related risks.</p>
+                                            <div class="button">
+                                                <a href="https://www.sustainalytics.com/esg-research/resource/governance-in-brief/governance-in-brief-march-16-2023" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="card card-2">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="two">
+                                            <h4>Credit Suisse takeover governance process ‘disastrous’</h4>
+                                            <div class="line"></div>
+                                            <p class="description">UBS’s takeover by Credit Suisse has been labelled an example of “disastrous” governance, in a deal that raises questions about the preferential treatment of some shareholders at the expense of others who will lose everything.</p>
+                                            <div class="button">
+                                                <a href="https://esgclarity.com/credit-suisse-takeover-governance/" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="card card-3">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="three">
+                                            <h4>如何平衡短期投入与长期效果？企业共议ESG时代机遇</h4>
+                                            <div class="line"></div>
+                                            <p class="description">中国节能皓信环境顾问集团可持续发展总监胡静文表示，在充满不确定性和众多外部挑战的今天，ESG不是企业发展的目标，而是企业发展的基石。“如何把握趋势，预测未来，规避风险，使企业长久健康地运营下去，ESG是最为可靠和有效的手段。”</p>
+                                            <div class="button">
+                                                <a href="https://m.nbd.com.cn/articles/2022-05-28/2299895.html" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="card card-4">
+                                        <div class="contents">
+                                            <img src="../images/flower.png" alt="four">
+                                            <h4>畅谈ESG投资趋势 共创湾区发展新局——中国太保成功举办大湾区ESG投资论坛</h4>
+                                            <div class="line"> </div>
+                                            <p class="description">2月25日，中国太保大湾区ESG投资论坛在广州太平洋金融大厦举行。论坛以“责任投资 绿动未来”为主题，邀请了地方政府、专家学者等齐聚一堂，共同探讨ESG投资的核心理念和实践经验。</p>
+                                            <div class="button">
+                                                <a href="http://www.news.cn/money/20230227/9d04ff77ff2547a5bf263d1c00a10b09/c.html" target="_blank">more</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        function htmlScroll() {
+            var top = document.body.scrollTop || document.documentElement.scrollTop;
+            if (elFix.data_top < top) {
+                elFix.style.position = 'fixed';
+                elFix.style.top = 0;
+                elFix.style.left = "# "
+                elFix.data_left;
+            } else {
+                elFix.style.position = 'static';
+            }
+        }
+
+        function htmlPosition(obj) {
+            var o = obj;
+            var t = o.offsetTop;
+            var l = o.offsetLeft;
+            while (o = o.offsetParent) {
+                t += o.offsetTop;
+                l += o.offsetLeft;
+            }
+            obj.data_top = t;
+            obj.data_left = l;
+        }
+
+        var oldHtmlWidth = document.documentElement.offsetWidth;
+        window.onresize = function() {
+            var newHtmlWidth = document.documentElement.offsetWidth;
+            if (oldHtmlWidth == newHtmlWidth) {
+                return;
+            }
+            oldHtmlWidth = newHtmlWidth;
+            elFix.style.position = 'static';
+            htmlPosition(elFix);
+            htmlScroll();
+        }
+        window.onscroll = htmlScroll;
+
+        var elFix = document.getElementById('float');
+        htmlPosition(elFix);
+
+        function open_win() {
+            window.open('../JS/chatgpt.html', "", "height=450px,width=350px,float:right,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no;")
+        }
+    </script>
+</body>
+
+</html>

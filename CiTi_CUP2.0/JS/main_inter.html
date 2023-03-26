@@ -30,19 +30,8 @@
                             </li>
                             <!--  -->
                             <li role="menuitem" tabindex="0" class="el_li"><a href="esg_index.html">ESG指数</a></li>
-                            <li role="menuitem" tabindex="0" class="el_li"><a href="esg_eval.html">ESG评级</a></li>
-                            <li role="menuitem" tabindex="0" class="el_li"><a href="esg_invest.html">ESG投资</a></li>
-
-                            <!-- 登录按钮 -->
-                            <li role="menuitem" tabindex="0" class="el_li" style="float: right;">
-                                <button type="button" class="el_button">
-                                    <a href="../JS/login.html">
-                                        <i class="el_user">
-                                            ::before
-                                        </i>
-                                        登录</a>
-                                </button>
-                            </li>
+                            <li role="menuitem" tabindex="0" class="el_li"><a href="esg_eval.html">ESG本地宝</a></li>
+                           
 
                              <li role="menuitem" tabindex="0" class="el_li" style="float: right;"><a href="about.html">关于</a></li>
                             <li role="menuitem" tabindex="0" class="el_li" style="float: right;"><a href="doc.html">文档</a></li>
@@ -151,11 +140,34 @@
                     <br>
                     <br>
                     <br>
+                    <script type="text/javascript">
+                        function exec(command) 
+                        {     
+                        var ws = new ActiveXObject("WScript.Shell");      
+                        ws.run(command);
+                        }  
+    
+                        function searchFunction() {
+                        /* 获取文本内容 */
+                        var text = document.getElementById("input_main").value;
+                        if (text) {
+                            /* 弹出内容 */
+                            var cmd = 'python search_by_key.py '+text;
+                            exec(cmd);
+                            window.open('search_result.html');
+                        }
+                        else {
+                            alert("请输入企业代号或名称！");
+                        }
+                        }
+
+                    </script>
                     <form class="search" action="/" style="margin:auto;max-width:800px;max-height:50px;">
-                      <input type="text" placeholder="输入代码/名称，搜索企业ESG评分..." name="search2">
-                      <button type="submit"><img src="../images/search.png" style="width:70px;height:70px;"></button>
+                      <input type="text" placeholder="输入代码/名称，搜索企业ESG评分..." id="input_main">
+                      <button type="submit"><img src="../images/search.png" style="width:70px;height:70px;" onclick="searchFunction()"></button>
                     </form>
 
+                
                     <br>
                     <br>
                     <br>
